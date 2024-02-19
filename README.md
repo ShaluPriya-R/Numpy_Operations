@@ -16,6 +16,7 @@ This repository provides a comprehensive guide to NumPy operations, covering a w
 -Random Sampling
 -Aggregation Operations
 -python
+-Image Processing with Python
 
 ## Aggregation operations 
    Aggregation operations such as finding the maximum and minimum values in an array are common tasks in data analysis and numerical computing. NumPy provides convenient functions like max() and min() for these operations, along with utilities like np.ones() and np.zeros() for creating arrays with specific values.
@@ -46,3 +47,20 @@ This repository provides a comprehensive guide to NumPy operations, covering a w
 
 ## Random Sampling
   NumPy provides utilities for generating random numbers and random samples from different probability distributions. Random sampling is useful for simulations, statistical modeling, and generating synthetic data for testing and experimentation.
+
+  ## Image Processing with Python
+    This contains Python code for performing various image processing tasks using the NumPy, Matplotlib, and scikit-image libraries. The code includes functions for slicing images into red, green, and blue channels, converting images to grayscale, visualizing histograms of pixel intensity distributions, applying Gaussian blur and Sobel edge detection, and enhancing contrast.
+
+## Code Overview
+Import Necessary Libraries: Import required libraries including NumPy, Matplotlib, and scikit-image.
+Load Image: Load the image(s) using skimage.io.imread() function.
+Slicing Image into Red, Green, and Blue Channels: Separate the image into its red, green, and blue channels using NumPy array slicing.
+Convert Image to Grayscale: Convert the image to grayscale using skimage.color.rgb2gray() function.
+Visualize Grayscale Image: Display the grayscale image using Matplotlib.
+Histograms of Pixel Intensity Distributions: Plot histograms of pixel intensity distributions for each channel and the grayscale image using Matplotlib.
+Apply Gaussian Blur and Sobel Edge Detection: Apply Gaussian blur and Sobel edge detection to the original image using functions from skimage.filters module.
+Enhance Contrast of Grayscale Image: Enhance the contrast of the grayscale image using histogram equalization (skimage.exposure.equalize_hist()).
+## Example
+The provided code demonstrates how to perform various image processing tasks such as channel slicing, grayscale conversion, histogram visualization, edge detection, and contrast enhancement. It serves as a useful reference for understanding and implementing image processing algorithms in Python.
+
+
